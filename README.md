@@ -1,37 +1,18 @@
-# 🎬 Anime Web — React Movie & Series Explorer
+ANIME WEB APP
+_____________
 
-A sleek, responsive, and interactive web application built with **React** and **Vite** that lets users explore, search, and save their favorite anime movies and series. This application pulls real-time anime data using the Jikan API (MyAnimeList wrapper).
+Features
 
----
+*This is a website which shows top ranked animes on the homepage
+*Users can search for any anime as their desire and see the details
+*There is a Favorites page in navbar the favorite animes will show in that page
+*Users can add to favorites and remove from favorites by clicking the ♥ icon
+_____________
 
-## Features
+Tech Stack
 
-- **Trending Anime Feed**: Instantly displays the top-ranked anime on the homepage on load.
-- **Search**: Allows users to search for any anime movie or series with immediate results.
-- **Favorites & Watchlist**: Users can save/remove items to/from their personal favorites.
-- **LocalStorage Persistence**: Saves the user's favorites state locally so selection survives page reloads.
-- **Client-Side Routing**: Smooth, instantaneous navigation between the Home feed and Favorites page using `react-router-dom`.
-- **Fully Responsive Design**: Designed with modern vannila CSS grid layouts for a high-quality user experience across mobile, tablet, and desktop screens.
+Frontend : React js
+API Engine: Jikan API v4
+Styling: Vanilla CSS
 
----
-
-## Tech Stack & Libraries
-
-- **Frontend Core:** React & Vite
-- **Routing:** React Router DOM v7
-- **State Management:** React Context API
-- **API Engine:** Jikan API v4
-- **Styling:** Custom Vanilla CSS
-- **Deployment:** `gh-pages`
-
----
-
-## API Integration
-
-This project communicates asynchronously with the **Jikan API v4** to fetch anime data without authentication keys.
-
----
-
-## License
-
-This project is open-source. Feel free to clone, customize, and build your own variations!
+_____________
