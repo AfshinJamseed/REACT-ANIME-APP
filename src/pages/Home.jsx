@@ -39,7 +39,6 @@ function Home() {
             console.log(err)
         } finally {
             setLoading(false);
-            setSearchQuery("");
         }
     }
     

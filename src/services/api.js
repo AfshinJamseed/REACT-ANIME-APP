@@ -17,8 +17,11 @@ export const searchAnimes = async (query) => {
     const response = await fetch(`
         ${BASE_URL}/anime?q=${encodeURIComponent(query)}
     `);
+    if (!response.ok) {
+      throw new Error(`status: ${response.status}`);  
+    }
     const data = await response.json();
-    return data.data;
+    return data && Array.isArray(data.data) ? data.data : [];
   } catch (error) {
     console.error("Error Fetching Animes: ", error);
     return [];
